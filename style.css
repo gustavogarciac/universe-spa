@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+header {
+  display: flex;
+  padding: 4rem 7.2rem;
+  align-items: center;
+  gap: 3.2rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+header ul li a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
+  opacity: .7;
+}
+header ul li a:hover {
+  opacity: 1;
+}
+header ul li a.active {
+  font-weight: bold;
+  opacity: 1;
+}
+
+#home .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/mountains-universe-1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
+#home .hero {
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+  gap: 2.4rem;
+}
+
+#home .hero h1 {
+  font-size: 4.8rem;
+  color: #fff;
+}
+
+#home .hero button {
+  width: clamp(50%, 35% + 15vw, 70%);
+  padding: 2rem;
+  border: 2px solid #fff;
+  border-radius: .4rem;
+  background: transparent;
+  color: #E1E1E6;
+  font-size: 2rem;
+  margin: auto;
+}
+
+#about .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/mountains-universe02.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
+.about-section {
+  width: clamp(60rem, 50rem + 30vw, 80%);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 20rem;
+  padding: 0 10rem;
+}
+.about-section h1 {
+  color: #E1E1E6;
+  font-size: 4.8rem;
+}
+.about-section p {
+  font-size: 1.8rem;
+  color: #E1E1E6;
+  opacity: .7;
+  line-height: 3.2rem;
+}
+
+
+#explore .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/mountains-universe-3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
+#not-found-404 .container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: url(assets/mountains-universe-3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
+#not-found-404 h1 {
+  font-size: 4.2rem;
+  color: #fff;
+}
+
+#not-found-404 p {
+  font-size: 1.8rem;
+  color: #E1E1E6;
+  opacity: .7;
+  line-height: 3.2rem;
+}
+.hide {
+  display: none;
+}
+
